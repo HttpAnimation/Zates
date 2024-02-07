@@ -1,6 +1,6 @@
 {
     "name": "zates",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "description": "Code editor with Electron frontend and Python backend",
     "main": "backend/main.py",
     "scripts": {
