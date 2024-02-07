@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zates - Code Editor</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        #editor {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="editor"></div>
+
+    <script>
+        // Import the Ace code editor library
+        const ace = require('ace-builds/src-noconflict/ace');
+
+        // Create an Ace editor instance
+        const editor = ace.edit('editor');
+
+        // Set editor options
+        editor.setTheme('ace/theme/twilight');
+        editor.getSession().setMode('ace/mode/javascript');
+        editor.setValue(`// Welcome to Zates - Your Electron Code Editor\n// Start typing your code here...`, 1); // 1 = moves cursor to end of document
+
+        // Automatically adjust editor size
+        editor.resize();
+    </script>
+</body>
+</html>
