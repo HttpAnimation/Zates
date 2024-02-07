@@ -1,0 +1,15 @@
+{
+    "name": "zates",
+    "version": "1.0.0",
+    "description": "Code editor with Electron frontend and Python backend",
+    "main": "backend/main.py",
+    "scripts": {
+      "start": "electron ."
+    },
+    "author": "HttpAnimations",
+    "license": "GPL-3.0",
+    "dependencies": {
+      "electron": "^16.0.0"
+    }
+  }
+  
